@@ -1,18 +1,15 @@
 package ru.netology.web;
 
-import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.exactText;
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byClassName;
-import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-class CallbackTest {
+class WebTest {
     @Test
-    void shouldSubmitRequest() {
+    void shouldFullForm() {
         open("http://localhost:9999");
         $("[name='name']").setValue("Иванов Иван");
         $("[name='phone']").setValue("+70000000000");
