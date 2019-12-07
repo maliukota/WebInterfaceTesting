@@ -11,7 +11,7 @@ class WebTest {
     @Test
     void shouldFullForm() {
         open("http://localhost:9999");
-        $("[name='name']").setValue("Иванов Иван");
+        $("[name='name']").setValue("Мамин-Сибиряк Иван Петрович");
         $("[name='phone']").setValue("+70000000000");
         $("[data-test-id='agreement']").click();
         $(byClassName("button")).click();
